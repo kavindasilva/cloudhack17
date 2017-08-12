@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>ReservationTemplate</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style media="screen">
+    .fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    }
+
+    .fa:hover {
+    opacity: 0.7;
+    }
+
+    .fa-facebook {
+    background: #3B5998;
+    color: white;
+    }
+    body{
+      background-color: #e6f5ff;
+    }
+
+    </style>
+
+  </head>
+  <body>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <div class="container"><br>
+
+      <div class="panel panel-primary">
+        <div class="panel-heading">Seat reservation</div>
+        <div class="panel-body">
+          <div class="well well-lg">
+            <p><b>5. Select the bus and seats</b></p>
+
+                <!--panel 1-->
+            <div class="panel panel-info">
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-xs-3">
+                    <img class="img-responsive" src="http://image.made-in-china.com/2f0j00OMPaVHhKlBqF/Mini-Bus-Van-Small-Bus-SLK6750-.jpg" alt="bus" width="100px" height="100px">
+                    <p>Super luxury</p>
+                    <p>Double deck</p>
+
+                  </div>
+                  <div class="col-xs-3">
+                    <p>Colombo</p>
+                    <p>6.00am</p>
+                  </div>
+                  <div class="col-xs-3">
+                    <p>Badulla</p>
+                    <p>4.00pm</p>
+                  </div>
+                  <div class="col-xs-3">
+                    <p>Rs.1000/person</p>
+                  </div>
+                </div>
+
+                <!--Collapse panel starts-->
+                <div class="panel-group">
+                  <div class="panel panel-default">
+                    <a data-toggle="collapse" href="#collapse1"><button type="button" class="btn btn-primary">View seats</button></a>
+                  <div id="collapse1" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <!--Bus seats begins-->
+                      <table class="table table-responsive table-condensed">
+                        <tbody>
+                          <tr>
+                            <td><img class="img-responsive" src="wheel.png" alt="wheel" width="40%"></td>
+                            <td><button type="button" class="btn btn-warning btn-sm">1</button></td>
+                            <td><button type="button" class="btn btn-warning btn-sm">4</button></td>
+                            <td><button type="button" class="btn btn-warning btn-sm">7</button></td>
+                            <td><button type="button" class="btn btn-warning btn-sm">10</button></td>
+                            <td><button type="button" class="btn btn-warning btn-sm">13</button></td>
+                            <td><button type="button" class="btn btn-warning btn-sm">16</button></td>
+                            <td><button type="button" class="btn btn-warning btn-sm">19</button></td>
+                            <td><button type="button" class="btn btn-success btn-sm">22</button></td>
+                            <td><button type="button" class="btn btn-warning btn-sm">25</button></td>
+                            <td><button type="button" class="btn btn-warning btn-sm">28</button></td>
+                            <td><button type="button" class="btn btn-success btn-sm">31</button></td>
+                            <td><button type="button" class="btn btn-warning btn-sm">34</button></td>
+                            <td><button type="button" class="btn btn-warning btn-sm">37</button></td>
+                          </tr>
+                          <tr>
+                            <td rowspan="6"></td>
+                            <td><button type="button" class="btn btn-warning btn-sm">2</button></td>
+                            <td><button type="button" class="btn btn-warning btn-sm">5</button></td>
+                            <td><button type="button" class="btn btn-warning btn-sm">8</button></td>
+                            <td><button type="button" class="btn btn-warning btn-sm">11</button></td>
+                            <td><button type="button" class="btn btn-warning btn-sm">14</button></td>
+                            <td><button type="button" class="btn btn-warning btn-sm">17</button></td>
+                            <td><button type="button" class="btn btn-warning btn-sm">20</button></td>
+                            <td><button type="button" class="btn btn-warning btn-sm">23</button></td>
+                            <td><button type="button" class="btn btn-success btn-sm">26</button></td>
+                            <td><button type="button" class="btn btn-success btn-sm">29</button></td>
+                            <td><button type="button" class="btn btn-warning btn-sm">32</button></td>
+                            <td><button type="button" class="btn btn-danger btn-sm">35</button></td>
+                            <td><button type="button" class="btn btn-warning btn-sm">38</button></td>
+                          </tr>
+
+                          <tr>
+                            <td><button type="button" class="btn btn-warning btn-sm">3</button></td>
+                            <td><button type="button" class="btn btn-warning btn-sm">6</button></td>
+                            <td><button type="button" class="btn btn-warning btn-sm">9</button></td>
+                            <td><button type="button" class="btn btn-danger btn-sm">12</button></td>
+                            <td><button type="button" class="btn btn-warning btn-sm">15</button></td>
+                            <td><button type="button" class="btn btn-success btn-sm">18</button></td>
+                            <td><button type="button" class="btn btn-warning btn-sm">21</button></td>
+                            <td><button type="button" class="btn btn-warning btn-sm">24</button></td>
+                            <td><button type="button" class="btn btn-warning btn-sm">27</button></td>
+                            <td><button type="button" class="btn btn-warning btn-sm">30</button></td>
+                            <td><button type="button" class="btn btn-warning btn-sm">33</button></td>
+                            <td><button type="button" class="btn btn-success btn-sm">36</button></td>
+                            <td><button type="button" class="btn btn-warning btn-sm">39</button></td>
+                          </tr>
+                          <tr>
+                            <td colspan="12"></td>
+                            <td><button type="button" class="btn btn-warning btn-sm">40</button></td>
+
+                          </tr>
+
+                          <td><button type="button" class="btn btn-warning btn-sm">65</button></td>
+                          <td><button type="button" class="btn btn-warning btn-sm">63</button></td>
+                          <td><button type="button" class="btn btn-warning btn-sm">61</button></td>
+                          <td><button type="button" class="btn btn-warning btn-sm">59</button></td>
+                          <td><button type="button" class="btn btn-warning btn-sm">57</button></td>
+                          <td><button type="button" class="btn btn-warning btn-sm">55</button></td>
+                          <td><button type="button" class="btn btn-danger btn-sm">53</button></td>
+                          <td><button type="button" class="btn btn-warning btn-sm">51</button></td>
+                          <td><button type="button" class="btn btn-success btn-sm">49</button></td>
+                          <td><button type="button" class="btn btn-success btn-sm">47</button></td>
+                          <td><button type="button" class="btn btn-warning btn-sm">45</button></td>
+                          <td><button type="button" class="btn btn-warning btn-sm">43</button></td>
+                          <td><button type="button" class="btn btn-warning btn-sm">41</button></td>
+                          <tr>
+
+                          <tr>
+                          <td><button type="button" class="btn btn-warning btn-sm">66</button></td>
+                          <td><button type="button" class="btn btn-warning btn-sm">64</button></td>
+                          <td><button type="button" class="btn btn-warning btn-sm">62</button></td>
+                          <td><button type="button" class="btn btn-warning btn-sm">60</button></td>
+                          <td><button type="button" class="btn btn-warning btn-sm">58</button></td>
+                          <td><button type="button" class="btn btn-warning btn-sm">56</button></td>
+                          <td><button type="button" class="btn btn-success btn-sm">54</button></td>
+                          <td><button type="button" class="btn btn-warning btn-sm">52</button></td>
+                          <td><button type="button" class="btn btn-warning btn-sm">50</button></td>
+                          <td><button type="button" class="btn btn-success btn-sm">48</button></td>
+                          <td><button type="button" class="btn btn-success btn-sm">46</button></td>
+                          <td><button type="button" class="btn btn-warning btn-sm">44</button></td>
+                          <td><button type="button" class="btn btn-warning btn-sm">42</button></td>
+
+                          </tr>
+
+                        </tbody>
+
+                      </table>
+
+
+                      <!--Bus seats ends-->
+                      <hr>
+                      <div class="row">
+                        <div class="col-xs-4">
+                          <p>Availabale seats</p>
+                          <button type="button" class="btn btn-warning btn-lg"></button>
+
+                        </div>
+                        <div class="col-xs-4">
+                          <p>Reserved seats</p>
+                          <button type="button" class="btn btn-success btn-lg"></button>
+
+                        </div>
+                        <div class="col-xs-4">
+                          <p>My seats</p>
+                          <p></p>
+                          <button type="button" class="btn btn-danger btn-lg"></button>
+                        </div>
+                      </div><hr>
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <p>Seats  : 15 16</p>
+                          <p>Amount : Rs.4200.00</p>
+                        </div>
+                        <div class="col-xs-3">
+
+                        </div>
+                        <div class="col-xs-3">
+                          <button type="button" class="btn btn-primary">Book now</button>
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Collapse panel ends-->
+
+              </div>
+            </div>
+            <!--panel 1 ends-->
+
+
+
+            <!--panel 2 starts-->
+        <div class="panel panel-info">
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-xs-3">
+                <img class="img-responsive" src="http://image.made-in-china.com/2f0j00OMPaVHhKlBqF/Mini-Bus-Van-Small-Bus-SLK6750-.jpg" alt="bus" width="100px" height="100px">
+                <p>Super luxury</p>
+                <p>Double deck</p>
+
+              </div>
+              <div class="col-xs-3">
+                <p>Colombo</p>
+                <p>6.00am</p>
+              </div>
+              <div class="col-xs-3">
+                <p>Badulla</p>
+                <p>4.00pm</p>
+              </div>
+              <div class="col-xs-3">
+                <p>Rs.1000/person</p>
+              </div>
+            </div>
+
+            <!--Collapse panel starts-->
+            <div class="panel-group">
+              <div class="panel panel-default">
+                <a data-toggle="collapse" href="#collapse2"><button type="button" class="btn btn-primary">View seats</button></a>
+              <div id="collapse2" class="panel-collapse collapse">
+                <div class="panel-body">
+
+                  <!--Bus seats begins-->
+                  <table class="table table table-condensed">
+                    <tbody>
+                      <tr>
+                        <td><img class="img-responsive" src="wheel.png" alt="wheel" width="40%"></td>
+                        <td><button type="button" class="btn btn-warning btn-sm">1</button></td>
+                        <td><button type="button" class="btn btn-warning btn-sm">4</button></td>
+                        <td><button type="button" class="btn btn-warning btn-sm">7</button></td>
+                        <td><button type="button" class="btn btn-warning btn-sm">10</button></td>
+                        <td><button type="button" class="btn btn-warning btn-sm">13</button></td>
+                        <td><button type="button" class="btn btn-warning btn-sm">16</button></td>
+                        <td><button type="button" class="btn btn-warning btn-sm">19</button></td>
+                        <td><button type="button" class="btn btn-success btn-sm">22</button></td>
+                        <td><button type="button" class="btn btn-warning btn-sm">25</button></td>
+                        <td><button type="button" class="btn btn-warning btn-sm">28</button></td>
+                        <td><button type="button" class="btn btn-success btn-sm">31</button></td>
+                        <td><button type="button" class="btn btn-warning btn-sm">34</button></td>
+                        <td><button type="button" class="btn btn-warning btn-sm">37</button></td>
+                      </tr>
+                      <tr>
+                        <td rowspan="6"></td>
+                        <td><button type="button" class="btn btn-warning btn-sm">2</button></td>
+                        <td><button type="button" class="btn btn-warning btn-sm">5</button></td>
+                        <td><button type="button" class="btn btn-warning btn-sm">8</button></td>
+                        <td><button type="button" class="btn btn-warning btn-sm">11</button></td>
+                        <td><button type="button" class="btn btn-warning btn-sm">14</button></td>
+                        <td><button type="button" class="btn btn-warning btn-sm">17</button></td>
+                        <td><button type="button" class="btn btn-warning btn-sm">20</button></td>
+                        <td><button type="button" class="btn btn-warning btn-sm">23</button></td>
+                        <td><button type="button" class="btn btn-success btn-sm">26</button></td>
+                        <td><button type="button" class="btn btn-success btn-sm">29</button></td>
+                        <td><button type="button" class="btn btn-warning btn-sm">32</button></td>
+                        <td><button type="button" class="btn btn-danger btn-sm">35</button></td>
+                        <td><button type="button" class="btn btn-warning btn-sm">38</button></td>
+                      </tr>
+
+                      <tr>
+                        <td><button type="button" class="btn btn-warning btn-sm">3</button></td>
+                        <td><button type="button" class="btn btn-warning btn-sm">6</button></td>
+                        <td><button type="button" class="btn btn-warning btn-sm">9</button></td>
+                        <td><button type="button" class="btn btn-danger btn-sm">12</button></td>
+                        <td><button type="button" class="btn btn-warning btn-sm">15</button></td>
+                        <td><button type="button" class="btn btn-success btn-sm">18</button></td>
+                        <td><button type="button" class="btn btn-warning btn-sm">21</button></td>
+                        <td><button type="button" class="btn btn-warning btn-sm">24</button></td>
+                        <td><button type="button" class="btn btn-warning btn-sm">27</button></td>
+                        <td><button type="button" class="btn btn-warning btn-sm">30</button></td>
+                        <td><button type="button" class="btn btn-warning btn-sm">33</button></td>
+                        <td><button type="button" class="btn btn-success btn-sm">36</button></td>
+                        <td><button type="button" class="btn btn-warning btn-sm">39</button></td>
+                      </tr>
+                      <tr>
+                        <td colspan="12"></td>
+                        <td><button type="button" class="btn btn-warning btn-sm">40</button></td>
+
+                      </tr>
+
+                      <td><button type="button" class="btn btn-warning btn-sm">65</button></td>
+                      <td><button type="button" class="btn btn-warning btn-sm">63</button></td>
+                      <td><button type="button" class="btn btn-warning btn-sm">61</button></td>
+                      <td><button type="button" class="btn btn-warning btn-sm">59</button></td>
+                      <td><button type="button" class="btn btn-warning btn-sm">57</button></td>
+                      <td><button type="button" class="btn btn-warning btn-sm">55</button></td>
+                      <td><button type="button" class="btn btn-danger btn-sm">53</button></td>
+                      <td><button type="button" class="btn btn-warning btn-sm">51</button></td>
+                      <td><button type="button" class="btn btn-success btn-sm">49</button></td>
+                      <td><button type="button" class="btn btn-success btn-sm">47</button></td>
+                      <td><button type="button" class="btn btn-warning btn-sm">45</button></td>
+                      <td><button type="button" class="btn btn-warning btn-sm">43</button></td>
+                      <td><button type="button" class="btn btn-warning btn-sm">41</button></td>
+                      <tr>
+
+                      <tr>
+                      <td><button type="button" class="btn btn-warning btn-sm">66</button></td>
+                      <td><button type="button" class="btn btn-warning btn-sm">64</button></td>
+                      <td><button type="button" class="btn btn-warning btn-sm">62</button></td>
+                      <td><button type="button" class="btn btn-warning btn-sm">60</button></td>
+                      <td><button type="button" class="btn btn-warning btn-sm">58</button></td>
+                      <td><button type="button" class="btn btn-warning btn-sm">56</button></td>
+                      <td><button type="button" class="btn btn-success btn-sm">54</button></td>
+                      <td><button type="button" class="btn btn-warning btn-sm">52</button></td>
+                      <td><button type="button" class="btn btn-warning btn-sm">50</button></td>
+                      <td><button type="button" class="btn btn-success btn-sm">48</button></td>
+                      <td><button type="button" class="btn btn-success btn-sm">46</button></td>
+                      <td><button type="button" class="btn btn-warning btn-sm">44</button></td>
+                      <td><button type="button" class="btn btn-warning btn-sm">42</button></td>
+
+                      </tr>
+
+                    </tbody>
+
+                  </table>
+
+
+                  <!--Bus seats ends-->
+
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p>Availabale seats</p>
+                      <button type="button" class="btn btn-warning btn-lg"></button>
+
+                    </div>
+                    <div class="col-xs-4">
+                      <p>Reserved seats</p>
+                      <button type="button" class="btn btn-success btn-lg"></button>
+
+                    </div>
+                    <div class="col-xs-4">
+                      <p>My seats</p>
+                      <p></p>
+                      <button type="button" class="btn btn-danger btn-lg"></button>
+                    </div>
+                  </div><hr>
+                  <div class="row">
+                    <div class="col-xs-6">
+                      <p>Seats  : 15 16</p>
+                      <p>Amount : Rs.4200.00</p>
+                    </div>
+                    <div class="col-xs-3">
+
+                    </div>
+                    <div class="col-xs-3">
+                      <button type="button" class="btn btn-primary">Book now</button>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Collapse panel ends-->
+
+          </div>
+        </div>
+        <!--panel 2 ends-->
+
+
+            <p><b>6.My details</b></p>
+            <form class="form-horizontal" action="/action_page.php" method="post">
+              <div class="form-group">
+                <div class="row">
+                  <label for="name" class="control-label col-xs-2">Name</label>
+                  <div class="col-xs-7">
+                    <input name="name" type="text" class="form-control" id="name" placeholder="Your name">
+
+                  </div>
+
+
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="row">
+                  <label for="nic" class="control-label col-xs-2">NIC / Passport no</label>
+                  <div class="col-xs-7">
+                    <input name="nic" type="number" class="form-control" id="nic">
+
+                  </div>
+
+
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="row">
+                  <label for="mobileno" class="control-label col-xs-2">Mobile phone no</label>
+                  <div class="col-xs-7">
+                    <input name="mobile" type="number" class="form-control" id="mobile">
+
+                  </div>
+
+
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-9">
+                </div>
+                  <button type="button" class="btn btn-info col-xs-1">Reset</button>
+                  <div class="col-xs-2">
+
+                  </div>
+              </div>
+               <label><input type="checkbox" name="agree"> I agree with the terms and conditions</label>
+
+            </form><br><br>
+            <p><b>7. Summary of my booking</b></p>
+            <div class="row">
+              <div class="panel panel-info col-xs-6">
+                <div class="panel-body">
+                  <p>No. of seats booked : 2</p>
+                  <p>Total bus fare : Rs. 2400.00</p>
+
+                </div>
+              </div>
+              <div class="col-xs-6">
+              </div>
+            </div><br><br>
+            <p><b>8. Payment details</b></p>
+
+
+        </div>
+      </div>
+
+      <div class="panel-footer">
+        Visit us on
+
+        <a href="https://web.facebook.com/GObus-1608485099171147/?ref=aymt_homepage_panel" target="_blank" class="fa fa-facebook"></a>
+
+      </div>
+
+    </div>
+  </div>
+  </body>
+</html>

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>DashboardTemplate</title>
+    <title>TopTemplate</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -14,23 +14,13 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
     <style media="screen">
-      .btn-lg{
-        padding:60px 40px;
-        margin-left: 160px;
-        border-radius: 10px;
-        width: 30%;
-      }
-
       body{
-        background-color:  #f2f2f2;
+        background-color: black;
       }
-
     </style>
 
   </head>
-
   <body>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -39,16 +29,18 @@
     <script src="js/bootstrap.min.js"></script>
 
     <div class="container">
-      <br><br>
-      <a href="schedule.html" class="btn btn-primary btn-lg" role="button">Time schedule</a>
-      <a href="reservation.html" class="btn btn-primary btn-lg" role="button">Reservation</a><br><br>
-      <a href="busfare.html" class="btn btn-primary btn-lg" role="button">Bus fare</a>
-      <a href="route.html" class="btn btn-primary btn-lg" role="button">Route and Distance</a><br><br>
-      <a href="time.html" class="btn btn-primary btn-lg" role="button">Estimated time of arrival</a>
-      <a href="inquiry.html" class="btn btn-primary btn-lg" role="button">Make inquiry</a>
+      <div class="col-md-4">
+      <img src="LOGO.png" class="img-responsive img-rounded " alt="GoBus" width="100" height="100">
+      </div><br>
+      <div class="col-md-7">
+      <h2 style="color:#ffffff;"><b>GOBus</b> Transport management system</h2>
+      </div><br>
+      <div class="col-md-1">
+      <a href="#" class="btn btn-success btn-lg">
+        <span class="glyphicon glyphicon-user"></span>  </a>
+      </div>
+
     </div>
 
-
   </body>
-
 </html>

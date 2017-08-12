@@ -1,9 +1,9 @@
 
 <?php
-$host="127.0.0.1";
-$uname="root";
-$password="1";
-$dataBase="gobus";
+$host="sql101.byethost10.com";
+$uname="b10_20053047";
+$password="zr506t1k";
+$dataBase="b10_20053047_gobus";
 
 $conn=new mysqli($host,$uname,$password,$dataBase);
 
