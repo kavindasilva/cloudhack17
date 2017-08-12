@@ -65,19 +65,65 @@
             <form class="form-inline" action="../funs/schedule.php" method="post">
               <div class="form-group">
                 <label for="sel1">Start location</label>
-                <input type="text" name="sstart" class="form-control" id="search" placeholder="Search" />
-				<div id="display"></div>
+                <select class="form-control" id="sel1" name="arr">
+                  <option value="colombo">Colombo</option>
+                  <option value="kegalle">Kegalle</option>
+                  <option value="galle">Galle</option>
+                  <option value="matara">Matara</option>
+                  <option value="anuradapura">Anuradhapura</option>
+                  <option value="vavunia">Vavuniya</option>
+                  <option value="trinco">Trincomalee</option>
+
+                </select>
 
 				<br />
 
                 <label for="sel2">End location</label>
-                <input type="text" name="sstop" class="form-control" id="search2" placeholder="Search" />
-				<div id="display2"></div>
+                <select class="form-control" id="sel2" name="dest">
+                  <option value="colombo">Colombo</option>
+                  <option value="kegalle">Kegalle</option>
+                  <option value="galle">Galle</option>
+                  <option value="matara">Matara</option>
+                  <option value="anuradapura">Anuradhapura</option>
+                  <option value="vavunia">Vavuniya</option>
+                  <option value="trinco">Trincomalee</option>
+
+                </select>
 
               </div>
 
             <br><br>
+            
+           
+              <div class="form-group">
 
+                <label for="sel3">Start time</label>
+                <div class="input-group bootstrap-timepicker timepicker">
+                  <input type="time" id="timepicker1" name="sstarttime" class="form-control input-small">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+
+
+                </div>
+                <script type="text/javascript">
+                    $('#timepicker1').timepicker();
+                </script>
+                <br />
+
+
+                <label for="sel4">End time</label>
+                <div class="input-group bootstrap-timepicker timepicker">
+                  <input type="text" name="sstoptime" id="timepicker2" class="form-control input-small">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+
+
+                </div>
+                <script type="text/javascript">
+                    $('#timepicker2').timepicker();
+                </script>
+
+
+                </div>
+				<br>
               <!--date picker begins here-->
               
 
