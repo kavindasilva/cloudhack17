@@ -5,6 +5,8 @@ include "../dbcon.php";
 require_once "p2.php";
 
 if(isset($_POST['searchfare'])){
+	$bustype=$_POST['btype'];
+	
 	if(is_null($_POST['sstarttime']) || empty($_POST['sstarttime']) )
 		$sstttime="0:0:0";
 	else
@@ -17,7 +19,7 @@ if(isset($_POST['searchfare'])){
 		$sstptime=$_POST['sstoptime'];
 		
 
-	searchRoute(0, $_POST['sstart'], $_POST['sstop'], $sstttime, $sstptime );
+	searchRoute(0, $_POST['sstart'], $_POST['sstop'], $sstttime, $sstptime, $bustype);
 }
 
 
@@ -32,12 +34,12 @@ if(isset($_POST['searchfare'])){
 //searchRoute(0, 'colombo','warakapola', 0,0);
 
 //start, stop, time, day eka danna
-function searchRoute($dt, $stt, $stp, $tmst="0:0:0", $tmsp="23:59:59"){
+function searchRoute($dt, $stt, $stp, $tmst="0:0:0", $tmsp="23:59:59", $type){
 
 	//$sql1="SELECT rid from nfare WHERE dest='$stt' and rid IN (SELECT rid from nfare where dest='$stp')"; //returns bus routes
 	$sql1="SELECT * from nfare WHERE dest='$stt' and rid IN (SELECT rid from nfare where dest='$stp')"; //returns bus routes
 
-	selectQ($sql1, $stt, $stp, $tmst, $tmsp); //select and display price, route, travel time
+	selectQ($sql1, $stt, $stp, $tmst, $tmsp, $type); //select and display price, route, travel time
 	
 	//filtTime();
 	
@@ -50,7 +52,7 @@ function viewRoute($result){
 
 
 //select data 
-function selectQ($sqlq, $sstt, $sstp, $tmst, $tmsp){
+function selectQ($sqlq, $sstt, $sstp, $tmst, $tmsp, $type){
 
 	$res = mysqli_query($GLOBALS['conn'] , $sqlq); //result
 	
@@ -93,7 +95,7 @@ function selectQ($sqlq, $sstt, $sstp, $tmst, $tmsp){
 			echo "EST travel time= ".$esttravel." mins<br>";
 			
 			//echo $route."<BR>";//"Rs. ";
-			echo substr($route,0, -3)."<BR>";//"Rs. ";
+			echo substr($route,0, -3)." ";//"Rs. ";
 			
 			//print bus route
 			$sql4="select * from route where rid='$route'";
@@ -113,7 +115,7 @@ function selectQ($sqlq, $sstt, $sstp, $tmst, $tmsp){
 			
 			//ETA calc
 			//$sql2="select * from schedule where rid='$route' "; //aniwa exists + start
-			$sql2="select s.timestart as xx1, a.type as xx2 from schedule s, allbus a where rid='$route' and s.busno=a.busid and s.timestart between '$tmst' and '$tmsp'"; //aniwa exists + start
+			$sql2="select s.timestart as xx1, a.type as xx2 from schedule s, allbus a where rid='$route' and a.type='$type' and s.busno=a.busid and s.timestart between '$tmst' and '$tmsp'"; //aniwa exists + start
 			//$sql3="select * from schedule where rid='$route' "; //aniwa exists + stop
 			$res2 = mysqli_query($GLOBALS['conn'] , $sql2); //start
 			if(mysqli_num_rows($res2)==0){
@@ -136,10 +138,7 @@ function selectQ($sqlq, $sstt, $sstp, $tmst, $tmsp){
 						$btype="semi-luxury";
 						addTime($tmp1,$time2); echo " ==> ".$btype."<input type='submit' value='Book'><br>";
 					}
-						
-					//echo "\t".addTime($,)
-					//addTime($tmp1,$time2); echo " ==> ".$btype."<input type='button' value='Book'><br>";
-					
+
 					echo "</form>";
 				}
 			}

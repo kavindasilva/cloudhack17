@@ -23,7 +23,7 @@ function addTime($stt, $plus){
 function subsTime($stt, $plus){
 	$selectedTime = $stt;
 	$endTime = strtotime("-$plus minutes", strtotime($selectedTime));
-	echo date('H:i:s', $endTime); //24hr
-	//return ;
+	//echo date('H:i:s', $endTime); //24hr
+	return date('H:i:s', $endTime);;
 }
 ?>

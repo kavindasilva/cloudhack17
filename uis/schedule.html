@@ -62,7 +62,7 @@
 
           <div class="well well-lg">
 
-            <form class="form-inline" action="index.html" method="post">
+            <form class="form-inline" action="../funs/schedule.php" method="post">
               <div class="form-group">
                 <label for="sel1">Start location</label>
                 <input type="text" name="sstart" class="form-control" id="search" placeholder="Search" />
@@ -77,41 +77,6 @@
               </div>
 
             <br><br>
-
-
-
-            <!--Time picker begins here -->
-            
-              <div class="form-group">
-
-                <label for="sel3">Start time</label>
-                <div class="input-group bootstrap-timepicker timepicker">
-                  <input type="time" name="" id="timepicker1" class="form-control input-small">
-                  <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
-
-
-                </div>
-                <script type="text/javascript">
-                    $('#timepicker1').timepicker();
-                </script>
-
-
-                <label for="sel4">End time</label>
-                <div class="input-group bootstrap-timepicker timepicker">
-                  <input type="time" name="" id="timepicker2" class="form-control input-small">
-                  <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
-
-
-                </div>
-                <script type="text/javascript">
-                    $('#timepicker2').timepicker();
-                </script>
-
-
-                </div>
-             <br><br>
-              <!--Time picker ends here -->
-
 
               <!--date picker begins here-->
               
@@ -130,7 +95,7 @@
                 <div class="form-group">
 
               <input type="reset" class="btn btn-info" value="Reset">
-              <input type="submit" class="btn btn-primary" value="Search">
+              <input type="submit" class="btn btn-primary" value="Search" name="timesch">
                 </div>
               </form><br><br>
 
