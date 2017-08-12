@@ -47,28 +47,28 @@
     <div class="container"><br>
 
       <div class="panel panel-primary">
-        <div class="panel-heading">Make inquiry</div>
+        <div class="panel-heading">Routes and Distance</div>
         <div class="panel-body">
 
           <div class="well well-lg">
 
-            <form>
+            <form action="../funs/inquire.php" method="post">
               <div class="form-group">
                 <label for="comment">Your complaint </label>
-                <textarea class="form-control" rows="10" id="comment"></textarea><br>
+                <textarea class="form-control" rows="10" id="comment" name="complaint"></textarea><br>
 
                 <label for="comment">Registration number of the bus </label>
-                <textarea class="form-control" rows="1" id="comment"></textarea>
+                <textarea class="form-control" rows="1" id="comment" name="busno"></textarea>
               </div><br>
 
-            </form><br>
+            <br>
 
             <!--end buttons start here-->
-            <form class="form-inline pull-right" action="index.html" method="post">
+            
               <div class="form-group">
 
-            <button type="reset" class="btn btn-info">Reset</button>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <input type="reset" class="btn btn-info " value="Reset">
+            <input type="submit" class="btn btn-primary " value="Submit" name="addcom">
               </div>
             </form><br><br>
             <!--end buttons end here-->
