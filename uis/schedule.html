@@ -74,9 +74,7 @@
                   <option value="vavunia">Vavuniya</option>
                   <option value="trinco">Trincomalee</option>
 
-                </select>
-
-				<br />
+                </select><br /><br>
 
                 <label for="sel2">End location</label>
                 <select class="form-control" id="sel2" name="dest">
@@ -89,14 +87,12 @@
                   <option value="trinco">Trincomalee</option>
 
                 </select>
-
               </div>
-
             <br><br>
-            
-           
-              <div class="form-group">
 
+
+              <div class="form-group">
+                <!--time picker starts here-->
                 <label for="sel3">Start time</label>
                 <div class="input-group bootstrap-timepicker timepicker">
                   <input type="time" id="timepicker1" name="sstarttime" class="form-control input-small">
@@ -107,7 +103,7 @@
                 <script type="text/javascript">
                     $('#timepicker1').timepicker();
                 </script>
-                <br />
+                <br /><br>
 
 
                 <label for="sel4">End time</label>
@@ -120,26 +116,22 @@
                 <script type="text/javascript">
                     $('#timepicker2').timepicker();
                 </script>
+                <!--time picker ends here-->
 
 
                 </div>
-				<br>
+        				<br><br>
               <!--date picker begins here-->
-              
 
                   <label for="sel3">Date</label>
                   <div class="input-group bootstrap-datepicker datepicker">
                     <input type="date" name="" id="datepicker1" class="form-control input-small">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
 
-                  </div>
-            <br>
+                  </div>  <br> <br>
 
               <!--date picker ends here-->
-              
-              <br>
-                <div class="form-group">
-
+              <div class="form-group  pull-right">
               <input type="reset" class="btn btn-info" value="Reset">
               <input type="submit" class="btn btn-primary" value="Search" name="timesch">
                 </div>
