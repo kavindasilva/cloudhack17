@@ -43,6 +43,9 @@
       background-color: #e6f5ff;
     }
     </style>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+   <script type="text/javascript" src="../funs/lsearch.js"></script>
+   <script type="text/javascript" src="../funs/lsearch2.js"></script>
   </head>
   <body>
 
@@ -62,37 +65,23 @@
             <form class="form-inline" action="index.html" method="post">
               <div class="form-group">
                 <label for="sel1">Start location</label>
-                <select class="form-control" id="sel1">
-                  <option>Colombo</option>
-                  <option>Kegalle</option>
-                  <option>Galle</option>
-                  <option>Matara</option>
-                  <option>Anuradhapura</option>
-                  <option>Vavuniya</option>
-                  <option>Trincomalee</option>
+                <input type="text" name="sstart" class="form-control" id="search" placeholder="Search" />
+				<div id="display"></div>
 
-                </select>
+				<br />
 
                 <label for="sel2">End location</label>
-                <select class="form-control" id="sel2">
-                  <option>Colombo</option>
-                  <option>Kegalle</option>
-                  <option>Galle</option>
-                  <option>Matara</option>
-                  <option>Anuradhapura</option>
-                  <option>Vavuniya</option>
-                  <option>Trincomalee</option>
-
-                </select>
+                <input type="text" name="sstop" class="form-control" id="search2" placeholder="Search" />
+				<div id="display2"></div>
 
               </div>
 
-            </form><br><br>
+            <br><br>
 
 
 
             <!--Time picker begins here -->
-            <form class="form-inline" action="index.html" method="post">
+            
               <div class="form-group">
 
                 <label for="sel3">Start time</label>
@@ -120,12 +109,12 @@
 
 
                 </div>
-              </form><br><br>
+             <br><br>
               <!--Time picker ends here -->
 
 
               <!--date picker begins here-->
-              <form class="form-inline" action="index.html" method="post">
+              
 
                   <label for="sel3">Date</label>
                   <div class="input-group bootstrap-datepicker datepicker">
@@ -133,14 +122,15 @@
                     <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
 
                   </div>
-            </form><br>
+            <br>
 
               <!--date picker ends here-->
-              <form class="form-inline pull-right" action="index.html" method="post">
+              
+              <br>
                 <div class="form-group">
 
-              <button type="reset" class="btn btn-info">Reset</button>
-              <button type="submit" class="btn btn-primary">Search</button>
+              <input type="reset" class="btn btn-info" value="Reset">
+              <input type="submit" class="btn btn-primary" value="Search">
                 </div>
               </form><br><br>
 
